@@ -1,0 +1,4 @@
+#File Storing Success
+#Tue Feb 01 16:37:02 IST 2022
+zero=one
+two=three
