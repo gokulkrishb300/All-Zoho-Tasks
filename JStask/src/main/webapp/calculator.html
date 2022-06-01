@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="cal.css">
+<link
+	href="https://fonts.googleapis.com/css2?family=Cookie&display=swap"
+	rel="stylesheet">
+	<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+<title>Calculator</title>
+</head>
+<!-- <script type="text/javascript" src="cal.js">
+</script> -->
+
+<script>
+let val = 0;
+function numbers(input){
+	document.getElementById("play").value += input;
+	storeAdd(input);
+}
+
+ function storeAdd(input){
+	val += input;
+} 
+function storeSub(input){
+	
+}
+function glow(symbols) {
+	
+	document.getElementById("play").value =' ';
+	if(symbols == '+'){
+	
+	document.getElementById("add").style.background = "#6699ff";
+	}
+	else if(symbols == '-'){
+		document.getElementById("sub").style.background = "#6699ff";
+	}
+}
+
+function evaluation(){
+	document.getElementById("add").style.background = "#e6e6ff";
+ /* 	const array = parseInt(add).split(" ");  */
+	document.getElementById("play").value = val;
+}
+	
+
+
+/* function store(){
+	document.getElement
+}
+	 */
+
+
+</script>
+<body>
+	<div class="structure">
+		<div class="display">
+			<input type="text" readonly size="14" id="play" value="">
+		</div>
+		<div class="keys">
+
+			<p>
+				<button onclick="numbers(7)">7</button>
+				<button onclick="numbers(8)">8</button>
+				<button onclick="numbers(9)">9</button>
+				<button onclick="location.reload()">C</button>
+<!-- 				<button onclick="(document.getElementById('play').value= ' ')">C</button> -->
+			</p>
+			<p>
+				<button onclick="numbers('4')">4</button>
+				<button onclick="numbers(5)">5</button>
+				<button onclick="numbers(6)">6</button>
+				<button onclick="numbers('/')">/</button>
+			</p>
+			<p>
+				<button onclick="numbers(1)">1</button> 
+				<button onclick="numbers(2)">2</button>
+				<button onclick="numbers(3)">3</button>
+				<button onclick="numbers('*')">*</button>
+			</p>
+			<p>
+				<button onclick="numbers(0)">0</button>
+				<button onclick="numbers('.')">.</button>
+				<button id="add" onclick="glow('+')">+</button>
+				<button id="sub" onclick="glow('-')">-</button>
+			</p>
+			<p>
+				<button onclick="numbers('(')">(</button>
+				<button onclick="numbers(')')">)</button>
+				<button onclick="numbers('^')">^</button>
+				<button onclick="evaluation()">=</button>
+			</p>
+		</div>
+	</div>
+</body>
+</html>
+ 
+ 	

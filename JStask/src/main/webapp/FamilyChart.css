@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+.container{
+	border:3px groove blue;
+	height:500px;
+	width: 500px;
+	position:relative;
+	margin:auto;
+	top:53px;
+	
+}
+
+.centre{
+   position:relative;
+   left : 30%;
+}
