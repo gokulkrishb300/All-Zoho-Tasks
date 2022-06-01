@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="cal2.css">
+<link
+	href="https://fonts.googleapis.com/css2?family=Cookie&display=swap"
+	rel="stylesheet">
+	<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+<title>Calculator-2</title>
+</head>
+
+<script src="PhaseTwo.js">
+
+</script>
+<body>
+	<div class="structure">
+		<div class="display">
+			<input type="text" readonly size="14" id="subDisplay" value="" placeholder="0">
+			<input text="text" readonly size="14" id="display" value="" placeholder="0">
+		</div>
+		<div class="keys">
+
+			<p>
+				<button onclick="input(7)">7</button>
+				<button onclick="input(8)">8</button>
+				<button onclick="input(9)">9</button>
+				<button onclick="location.reload()">C</button>
+			</p>
+			<p>
+				<button onclick="input(4)">4</button>
+				<button onclick="input(5)">5</button>
+				<button onclick="input(6)">6</button>
+				<button id="/" onclick="symbol('/')">/</button>
+			</p>
+			<p>
+				<button onclick="input(1)">1</button> 
+				<button onclick="input(2)">2</button>
+				<button onclick="input(3)">3</button>
+				<button id="*" onclick="symbol('*')">x</button>
+			</p>
+			<p>
+				<button onclick="input(0)">0</button>
+				<button onclick="input('.')">.</button>
+				<button id="+" onclick="symbol('+')">+</button>
+				<button id="-" onclick="symbol('-')">-</button>
+			</p>
+			<p>
+				<button id="equal" onclick="equalizer(true)">=</button>
+			</p>
+		</div>
+	</div>
+</body>
+</html>
+ 
+ 	
