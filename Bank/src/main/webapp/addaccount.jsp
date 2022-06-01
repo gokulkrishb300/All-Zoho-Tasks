@@ -8,7 +8,6 @@
 <head>
 <meta charset="UTF-8">
 <jsp:include page="welcomeadmin.jsp"/>
-
 <title>Add Account</title>
 <link rel="stylesheet" type="text/css" href="externalstyle.css">
 </head>
@@ -32,7 +31,6 @@
 int accountID=Integer.parseInt(request.getParameter("accountID"));
 
 if(accountID==0){   %>
-							
 <h2>Add account </h2>
  
 

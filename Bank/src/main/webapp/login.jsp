@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
     <%@page errorPage ="error.jsp"%>
     <%@page errorPage ="error.jsp"%>
-<!DOCTYPE html>-
+<!DOCTYPE html>
 <html>
 <head>
 <title>login page</title>
@@ -24,6 +24,9 @@
     <button class="btn">Submit</button>
     <button type="reset" class="btn">Reset</button>
     
+
+
+
 
 </form>
 <% if(request.getAttribute("error")!=null)

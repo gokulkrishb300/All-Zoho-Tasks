@@ -75,7 +75,6 @@ public class Adate extends HttpServlet {
 			   }
 			    
 			   int customerID = Integer.parseInt(customerId);   
-			   
 		account.setCustomerID(customerID);
 		
 		account.setBranchName(branch);
@@ -106,7 +105,6 @@ public class Adate extends HttpServlet {
 				
 		    }
 		   int customerID = Integer.parseInt(customerId);
-		   
 		account.setAccountID(accountID);
 	
 		account.setCustomerID(customerID);
